@@ -1,0 +1,143 @@
+@font-face { font-family: Now; src: url('now/Now-Regular.otf'); } 
+@font-face { font-family: Now; font-weight: bold; src: url('now/Now-Bold.otf');}
+
+ *{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 2rem;
+}
+body{
+    font-family: Now;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background: rgba(40, 40, 40, 1);
+    color: rgba(255, 255, 255, 1);
+
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-family: Now;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.btn-with-bg{
+    background-color: rgba(40, 40, 40, 1);
+    box-shadow: 0 0 8px rgba(14, 9, 9, 0.699);
+    padding: 13px 32px;
+    border-radius: 14px;
+}
+
+.skyblue{
+    color: rgba(48, 251, 239, 1);
+}
+
+header{
+    font-family: Now;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 3rem;
+}
+
+.main-logo{
+    font-family: Now;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    list-style-type: none;
+}
+
+header ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero Section */
+
+.hero-section{
+    
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    max-height: 70vh;
+}
+
+.hero-section h1{
+    font-size: 3rem;
+    font-family: Now;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    max-width: 500px;
+
+}
+.hero-section p{
+    font-family: Now;
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+
+}
+
+.hero-section div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+
+/* About-section */
+.about-container{
+    margin-top: 3rem;
+}
+
+.about{
+    width: 80%;
+    margin: auto;
+    background: radial-gradient(38.2% 50% at 50% 50%, #2E3134 0%, #292B2E 100%);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.385);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 50px;
+}
+
+.about div:first-child{
+    width: 100%;
+}
+
+.about div:nth-child(2){
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.about div:nth-child(2) h2{
+    font-size: 2rem;
+    font-family: Now;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
