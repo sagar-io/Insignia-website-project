@@ -24,16 +24,29 @@ a{
     color: #fff;
     text-decoration: none;
     font-family: Now;
+    transition: all 1s;
+}
+a:hover{
+    border-bottom: 1px solid white;
+}
+i{
+    color: rgba(240, 99, 184, 1);
+    cursor: pointer;
 }
 ul{
     list-style: none;
 }
 
+i.white{
+    color: #fff;
+}
 h3{
    font-size: 2rem;
    line-height: 4rem;
 }
-
+.h2{
+    line-height: 3rem;
+}
 img{
     width: 100%;
     height: auto;
@@ -41,9 +54,10 @@ img{
 section{
     border-radius: 50px;
     width: 80%;
-    margin: 3rem auto;
+    margin: 6rem auto;
     padding: 40px;
     background: radial-gradient(38.2% 50% at 50% 50%, #2E3134 0%, #292B2E 100%);
+    box-shadow: 2px 2px 40px 0px #0000004D inset;
 
 }
 .dot.active{
@@ -162,7 +176,6 @@ header ul a{
     width: 80%;
     margin: auto;
     background: radial-gradient(38.2% 50% at 50% 50%, #2E3134 0%, #292B2E 100%);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.385);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -258,9 +271,6 @@ header ul a{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-.arrows:hover{
-    transform: scale(2);
 }
 
 
@@ -399,9 +409,10 @@ header ul a{
     background: radial-gradient(38.2% 50% at 50% 50%, #2E3134 0%, #292B2E 100%);
     padding: 10px 20px;
     border-radius: 30px;
-    box-shadow: 0 0 8px rgba(14, 9, 9, 0.699);
+    box-shadow: 2px 2px 40px 0px #0000004D inset;
 
 }
+
 #free-section{
     justify-content: space-between;
 }
@@ -435,4 +446,20 @@ footer{
 
 .flex-row-space-btw img{
     width: 100%;
+}
+
+/* rest element */
+.request-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+#hr{
+    height: 7px;
+    width: 100%;
+    border-top: 2px solid #a59c9ca9;
+    border-bottom: 2px solid #9b69e2ab;
 }
