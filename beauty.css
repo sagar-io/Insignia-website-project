@@ -25,6 +25,9 @@ a{
     text-decoration: none;
     font-family: Now;
 }
+ul{
+    list-style: none;
+}
 
 h3{
    font-size: 2rem;
@@ -36,9 +39,10 @@ img{
     height: auto;
 }
 section{
+    border-radius: 50px;
     width: 80%;
     margin: 3rem auto;
-    padding: 20px;
+    padding: 40px;
     background: radial-gradient(38.2% 50% at 50% 50%, #2E3134 0%, #292B2E 100%);
 
 }
@@ -61,6 +65,26 @@ section{
 .purple{
     color: rgba(156, 105, 226, 1);
     
+}
+
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.flex-row-space-btw{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header{
@@ -268,6 +292,7 @@ header ul a{
     gap: 30px;
     padding: 20px;
     margin-left: 50px;
+    transition: all 1s;
 }
 
 .testimonial{
@@ -311,12 +336,40 @@ header ul a{
     background-color: white;
 }
 
+.round{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    transform: scale(1);
+    background-color: #fff;
+    cursor: pointer
+   
+}
+.round:hover{
+    transform: scale(1.5);
+}
+
+.round.activate{
+    background: rgba(240, 99, 184, 1);
+
+}
+.testimonials-slide-items .arrows{
+    display: flex;
+    gap: 10px;
+    
+}
+.arrows span{
+    cursor: pointer;
+}
 
 /* subscribe section---- */
 .subscribe-section{
+    margin: 5rem 0;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .subscribe-section h3{
     padding: 0;
@@ -343,11 +396,37 @@ header ul a{
     box-shadow: 0 0 8px rgba(14, 9, 9, 0.699);
 
 }
+#free-section{
+    justify-content: space-between;
+}
 
-.try-for-free{
-    background-color: none;
+#try-for-free{
+    background-color: transparent;
     padding: 0;
     margin: 0;
     box-shadow: none;
 }
+.line-break{
+    width: 100vw !important;
+    background-color: gray;
+}
 
+/* Footer */
+
+footer{
+    width: 80%;
+    margin: auto;
+}
+
+.footer-bottom-container{
+
+}
+
+.footer-bottom{
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.flex-row-space-btw img{
+    width: 100%;
+}
