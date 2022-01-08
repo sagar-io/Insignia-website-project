@@ -249,13 +249,18 @@ header ul a{
     border-radius: 50%;
     transition: all 0.5s;
     background-color: #fff;
-    
+}
+.dot:hover{
+    transform: scale(2);
 }
 
 .arrows{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.arrows:hover{
+    transform: scale(2);
 }
 
 
@@ -353,6 +358,7 @@ header ul a{
 
 .round.activate{
     background: rgba(240, 99, 184, 1);
+    transform: scale(2);
 
 }
 .testimonials-slide-items .arrows{
