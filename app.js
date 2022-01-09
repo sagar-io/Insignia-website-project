@@ -68,3 +68,39 @@ function handleSwipeDot(val) {
     }
 }
 
+
+
+const menu = document.querySelector('header ul');
+const hamburgerIcon = document.querySelector('.hamburger-icon');
+const hamburgerIconStrip = hamburgerIcon.querySelectorAll('.strip');
+
+
+const lastStrip = hamburgerIconStrip[2];
+const firstStrip = hamburgerIconStrip[0];
+const midStrip = hamburgerIconStrip[1];
+
+let indicator = true;
+
+function handleMoboMenu() {
+    indicator  = !indicator;
+    if(!indicator){
+        midStrip.style.opacity = '0';
+        firstStrip.style.transform = `translate(8%,-62%) rotate(-35deg)`;
+        lastStrip.style.transform = ` rotate(35deg)`;
+        menu.style.transform = `translate(0)`
+    }
+    else{
+        midStrip.style.opacity = '1';
+        firstStrip.style.transform = `translate(0) rotate(0deg)`;
+        lastStrip.style.transform = ` rotate(0)`;
+        menu.style.transform = `translate(100%)`;
+    }
+}
+
+
+
+
+
+
+
+hamburgerIcon.addEventListener('click', handleMoboMenu);

@@ -1,7 +1,7 @@
 @font-face { font-family: Now; src: url('now/Now-Regular.otf'); } 
 @font-face { font-family: Now; font-weight: bold; src: url('now/Now-Bold.otf');}
 
- *{
+ *, *::before, *::after{
     box-sizing: border-box;
 }
 h1{
@@ -70,7 +70,7 @@ section{
     box-shadow: 0 0 8px rgba(14, 9, 9, 0.699);
     padding: 13px 32px;
     border-radius: 30px;
-    
+    cursor: pointer;
 }
 
 .skyblue{
@@ -130,6 +130,10 @@ header ul a{
     color: #fff;
 }
 
+
+.hamburger-icon{
+    display: none;
+}
 /* Hero Section */
 
 .hero-section{
@@ -456,10 +460,77 @@ footer{
     gap: 10px;
 }
 
-
 #hr{
     height: 7px;
     width: 100%;
     border-top: 2px solid #a59c9ca9;
     border-bottom: 2px solid #9b69e2ab;
+}
+
+
+
+@media(max-width: 1000px) {
+    body{
+        background-color: rgba(3, 2, 2, 0.829);
+    }
+    header ul{
+        flex-direction: column;
+        /* display: none; */
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: rgb(38, 213, 236);
+        padding: 25px 30px;
+        border-radius: 20px;
+        margin: 0;
+        z-index: 2;
+        transform: translate(100%);
+        transition: 0.5s;
+    
+    }
+    header ul li:last-child{
+        margin-bottom: 5px;
+        border-bottom: 2px  solid transparent;
+        transition: 0.5s;
+    }
+    header ul li:last-child a:hover{
+        border: none;
+    }
+
+
+    header ul li:last-child:hover{
+        border-bottom: 2px solid #fff;
+        transform: scale(1.06) translateY(-8%);
+    }
+    header ul li:last-child:active{
+        border-bottom: none;
+        transform: scale(0.7) translateY(8%);
+    }
+
+    .hamburger-icon{
+        position: fixed;
+        right: 0;
+        top: 0;
+        margin: 20px 30px 0 0;
+        cursor: pointer;
+        display: block;
+        z-index: 3;
+    }
+
+    .hamburger-icon .strip{
+        width: 34px;
+        height: 3px;
+        background-color: white;
+        margin-top: 5px;
+        transition: 0.5s;
+        /* transform-origin: center; */
+        opacity: 1;
+    }
+    .hamburger-icon .strip:first-child{
+        transform-origin: right;
+    }
+    .hamburger-icon .strip:last-child{
+        transform-origin: right;
+    }
+    
 }
